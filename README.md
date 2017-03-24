@@ -1,24 +1,9 @@
 # README
+This is a fullstack application built by Rails Mentees [railsmentors.org](http://www.railsmentors.org).
+The goal is to build a CMS-backed native application that allows users to track their workouts in-progress.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Major components
+- Rails Backend that allows users to log in and build/modify workouts
+   - Authentication using [Authlogic](https://github.com/binarylogic/authlogic)
+- [Ionic 2](http://ionicframework.com/) frontend that allows users walk through a workout
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
