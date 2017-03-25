@@ -10,13 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170325045019) do
+ActiveRecord::Schema.define(version: 20170325053331) do
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
     t.string   "last_name"
     t.string   "email"
-    t.string   "password"
     t.string   "crypted_password"
     t.string   "password_salt"
     t.string   "persistence_token"
