@@ -1,0 +1,31 @@
+%h1 Registrationg Form
+
+= form_for @user_session do |f|
+  - if @user.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(@user.errors.count, "error")
+        prohibited:
+      %ul
+        - @user.errors.full_messages.each do |msg|
+          %li= msg
+
+  = f.label :first_name
+  %br/
+  = f.text_field :first_name
+  %br/
+  = f.label :last_name
+  %br/
+  = f.text_field :last_name
+  %br/
+  = f.label :email
+  %br/
+  = f.text_field :email
+  %br/
+  %br/
+  = f.label :password
+  %br/
+  = f.password_field :password
+  %br/
+  %br/
+  = f.submit "Register"
