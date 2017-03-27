@@ -23,5 +23,5 @@ ActiveRecord::Schema.define(version: 20170327023124) do
     t.string   "persistence_token"
     t.index ["persistence_token"], name: "index_users_on_persistence_token", unique: true
   end
-
 end
+
