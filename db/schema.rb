@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170327021735) do
+ActiveRecord::Schema.define(version: 20170327023124) do
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name"
@@ -18,8 +18,10 @@ ActiveRecord::Schema.define(version: 20170327021735) do
     t.string   "email"
     t.string   "crypted_password"
     t.string   "password_salt"
-    t.datetime "created_at",       null: false
-    t.datetime "updated_at",       null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "persistence_token"
+    t.index ["persistence_token"], name: "index_users_on_persistence_token", unique: true
   end
 
 end
