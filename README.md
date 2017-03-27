@@ -7,3 +7,7 @@ The goal is to build a CMS-backed native application that allows users to track 
    - Authentication using [Authlogic](https://github.com/binarylogic/authlogic)
 - [Ionic 2](http://ionicframework.com/) frontend that allows users walk through a workout
 
+
+# TODOs
+See [TODO.md](https://github.com/josh-m-sharpe/workout-959/blob/master/TODO.md) for a list of things that can be worked on
+
