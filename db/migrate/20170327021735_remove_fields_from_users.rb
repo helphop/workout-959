@@ -26,5 +26,6 @@ class RemoveFieldsFromUsers < ActiveRecord::Migration[5.0]
       t.remove   :active
       t.remove   :approved
       t.remove   :confirmed
+    end
   end
 end
