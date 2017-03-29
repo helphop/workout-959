@@ -6,11 +6,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    if @user.save
-      redirect_to 'http://localhost:3000'
-    else
-      render :new
-    end
+    @user.save ? (redirect_to 'http://localhost:3000') : (render :new)
   end
 
 
