@@ -17,4 +17,14 @@ class SignUp < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "h1", "Workout 959"
   end
+
+  test "we can see error messages for invalid sign up" do
+
+    get "/sign_up"
+    assert_response :success
+    post "/users",
+    params: {user: {first_name: "", last_name: "Peter", email: "jp@example.com", password: "password"}}
+    assert_select "h2", "2 errors 
+prohibited:"
+  end
 end
