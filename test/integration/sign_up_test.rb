@@ -24,7 +24,6 @@ class SignUp < ActionDispatch::IntegrationTest
     assert_response :success
     post "/users",
     params: {user: {first_name: "", last_name: "Peter", email: "jp@example.com", password: "password"}}
-    assert_select "h2", "2 errors 
-prohibited:"
+    assert_select "li", "First name can't be blank" 
   end
 end
